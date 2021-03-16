@@ -28,7 +28,231 @@ and open the template in the editor.
   gtag('config', 'G-L9SJHTCM5J');
 </script>
     </head>
-    <body>
-        <div>TODO write content</div>
+     <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    
+    <script>$(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(450).css({'overflow':'visible'});})
+    </script>
+    <!-- Preloader -->
+
+
+
+</div>
+<div class="overlay-navigation">
+  <nav role="navigation">
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="history.html" >History</a></li>
+      <li><a href="product.html" >Product</a></li>
+      <li><a href="about.html" >About</a></li>
+    </ul>
+  </nav>
+</div>
+
+<section class="home">
+  <a href="index.html" target="_blank">
+      <h1>CO.FE</h1>
+  	<img class="img-responsive zoom" style="width: 200px;height: 200px;" src="images/cofe_logo.png"></a>
+  <div class="open-overlay">
+    <span class="bar-top"></span>
+    <span class="bar-middle"></span>
+    <span class="bar-bottom"></span>
+  </div>
+</section>
+
+
+<script></script>
+   
+    
+
+    
+ <div class="container-fluid main">
+
+  
+
+  <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active background a"></div>
+      <div class="item background b"></div>
+      <div class="item background c"></div>
+    </div>
+  </div>
+
+
+ 
+
+</div>
+
+<script>/* When your mouse cursor enter the background, the fading won't pause and keep playing */ 
+$('.carousel').carousel({
+    pause: "false" /* Change to true to make it paused when your mouse cursor enter the background */
+});</script>
+
+<!-- fading js -->
+<script>
+  AOS.init();
+</script>
+<!-- fading js end -->
+<!-- arrow -->
+<div>
+
+<a class="scroll-down" href="#content">
+<span class="arrow"></span>
+<!--<span class="hint">scroll</span>-->
+</a>
+</div>
+
+<script>let gotoOne = () => $.scrollTo($("#one"), 800);
+let gotoTop = () => $.scrollTo($("#top"), 800);
+
+$("#topArrow").click(gotoOne);
+$("#bottomArrow").click(gotoTop);</script>
+  <!-- //Header -->
+<script>
+$('.open-overlay').click(function() {
+  var overlay_navigation = $('.overlay-navigation'),
+    nav_item_1 = $('nav li:nth-of-type(1)'),
+    nav_item_2 = $('nav li:nth-of-type(2)'),
+    nav_item_3 = $('nav li:nth-of-type(3)'),
+    nav_item_4 = $('nav li:nth-of-type(4)'),
+    nav_item_5 = $('nav li:nth-of-type(5)'),
+    top_bar = $('.bar-top'),
+    middle_bar = $('.bar-middle'),
+    bottom_bar = $('.bar-bottom');
+
+  overlay_navigation.toggleClass('overlay-active');
+  if (overlay_navigation.hasClass('overlay-active')) {
+
+    top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
+    middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
+    bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
+    overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down')
+    nav_item_1.removeClass('slide-in-nav-item-reverse').addClass('slide-in-nav-item');
+    nav_item_2.removeClass('slide-in-nav-item-delay-1-reverse').addClass('slide-in-nav-item-delay-1');
+    nav_item_3.removeClass('slide-in-nav-item-delay-2-reverse').addClass('slide-in-nav-item-delay-2');
+    nav_item_4.removeClass('slide-in-nav-item-delay-3-reverse').addClass('slide-in-nav-item-delay-3');
+    nav_item_5.removeClass('slide-in-nav-item-delay-4-reverse').addClass('slide-in-nav-item-delay-4');
+  } else {
+    top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
+    middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
+    bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
+    overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up')
+    nav_item_1.removeClass('slide-in-nav-item').addClass('slide-in-nav-item-reverse');
+    nav_item_2.removeClass('slide-in-nav-item-delay-1').addClass('slide-in-nav-item-delay-1-reverse');
+    nav_item_3.removeClass('slide-in-nav-item-delay-2').addClass('slide-in-nav-item-delay-2-reverse');
+    nav_item_4.removeClass('slide-in-nav-item-delay-3').addClass('slide-in-nav-item-delay-3-reverse');
+    nav_item_5.removeClass('slide-in-nav-item-delay-4').addClass('slide-in-nav-item-delay-4-reverse');
+  }
+})
+</script>
+
+<div class="timeline-container">
+   <div class="timeline-block timeline-block-right">
+      <div class="marker">
+      </div>
+      <div class="timeline-content">
+         <h3>September</h3>
+         <p>Project starts and Mason Street detour begins</p>
+      </div>
+   </div>
+   <div class="timeline-block timeline-block-left">
+      <div class="marker">
+      </div>
+      <div class="timeline-content">
+         <h3>Fall</h3>
+         <p>Landfill removed and water tunnels installed beneath Mason Street</p>
+      </div>
+   </div>
+   <div class="timeline-block timeline-block-right">
+      <div class="marker">
+      </div>
+      <div class="timeline-content">
+         <h3>Winter</h3>
+         <p>Bridge is constructed and volunteers plant thousands of native seedlings</p>
+      </div>
+   </div>
+   <div class="timeline-block timeline-block-left">
+      <div class="marker">
+      </div>
+      <div class="timeline-content">
+         <h3>Spring</h3>
+         <p>Opening Day!‎​</p>
+      </div>
+   </div>
+</div>
+<!--  FOOTER -->
+
+	
+  <div class="footer1 container-fluid" style="background-color: #1b1b1b">
+<div class="container">
+      <div class="footer-bottom">
+        <div class="col-md-4 footer-grids wow">
+           
+        <span> <h4 style="color: whitesmoke;">CO.FE</h4>
+            <img class="img-responsive" style="width: 150px;height: 150px;" src="images/cofe_logo.png" style="width: 300px;"></span>
+
+                
+                
+        </div>
+        <div class="col-md-4  footer-mdl w3agile wow ">
+        <h4 class="foothead">Our Partner</h4>
+        <img alt="" style="width: 150px;height: 150px;" src="images/starbuck.png"/>
+        
+        </div>
+          <div class="col-md-4 footer-grids agileinfo wow">
+        <h4 class="foothead">Contact Us</h4>
+          <ul class="footer-address">
+            <li style="color: whitesmoke;"><span class="glyphicon glyphicon-home" style="color: whitesmoke;" aria-hidden="true"></span>CO.FE G-047, Mid Valley Megamall</li>
+            <li style="color: whitesmoke;"><span class="glyphicon glyphicon-envelope" style="color: whitesmoke;" aria-hidden="true"></span><a href="" style="color: whitesmoke;">cofe@gmail.com</a></li>
+            <li style="color: whitesmoke;"><span class="glyphicon glyphicon-earphone" style="color: whitesmoke;" aria-hidden="true"></span>011-3377 2040</li>
+          </ul>
+        </div>
+        <div class="clearfix" > </div>
+      </div>
+      <div class="footer-copy  w3 wow">
+          <p style="color: whitesmoke;font-family: Century Gothic;font-size: 18px;">© 2021 CO.FE. All rights reserved.</p>
+      </div>
+    </div>
+
+
+
+
+
+
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+<script>// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});</script>
+<!-- Return to Top -->
     </body>
 </html>
