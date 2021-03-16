@@ -734,7 +734,8 @@ Animation keyframes
   background-position: center center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 450px;
+  width: 1800px;
 }
 
 @media (max-width:200px) {
@@ -744,15 +745,15 @@ Animation keyframes
 }
 
 .carousel .background.a {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner1.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner1.png");
 }
 
 .carousel .background.b {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/coffee_house_02.jfif");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner2.png");
 }
 
 .carousel .background.c {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/coffee_house_03.jfif");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner3.png");
 }
 
 .carousel-fade .carousel-inner .item {
