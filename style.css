@@ -744,7 +744,7 @@ Animation keyframes
 }
 
 .carousel .background.a {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/coffee_house_01.jfif");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner1.jpg");
 }
 
 .carousel .background.b {
